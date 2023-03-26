@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="result" disabled>
+            <button class="btn clear" onclick="clearResult()">C</button>
+            <button class="btn delete" onclick="deleteChar()">CE</button>
+            <button class="btn operator" onclick="getResult('/')">÷</button>
+            <button class="btn operator" onclick="getResult('*')">x</button>
+            <button class="btn" onclick="getResult('7')">7</button>
+            <button class="btn" onclick="getResult('8')">8</button>
+            <button class="btn" onclick="getResult('9')">9</button>
+            <button class="btn operator" onclick="getResult('-')">-</button>
+            <button class="btn" onclick="getResult('4')">4</button>
+            <button class="btn" onclick="getResult('5')">5</button>
+            <button class="btn" onclick="getResult('6')">6</button>
+            <button class="btn operator" onclick="getResult('+')">+</button>
+            <button class="btn" onclick="getResult('1')">1</button>
+            <button class="btn" onclick="getResult('2')">2</button>
+            <button class="btn" onclick="getResult('3')">3</button>
+            <button class="btn" onclick="getResult('0')">0</button>
+            <button class="btn" onclick="getResult('.')">.</button>
+            <button class="btn equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
